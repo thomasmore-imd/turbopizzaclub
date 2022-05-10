@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+:root {
+    --color-green: #00e311;
+    --color-black : #000;
+    --color-white : #fff;
+}
+
+.ticker {
+  
+    height: 20px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: var(--color-green);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    
+}
+.ticker-top {
+      top: 0;
+    z-index: 3;
+}
+.ticker-right {
+    width: 100vh;
+    position: absolute;
+    left: 100%;
+    transform-origin: top left;
+    transform: rotate(90deg);
+    top: 0px;
+
+}
+
+.ticker-left {
+    width: 100vh;
+    position: absolute;
+    left: 0;
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    top: -20px;
+
+}
+.ticker__text-1 {
+    width: 200%;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    animation-name: marquee1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.ticker__text-2 {
+    width: 200%;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    animation-name: marquee2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ticker__text-emph {
+    font-weight: bold;
+}
+
+.ticker__text-curs {
+    font-style: italic;
+    font-weight: small;
+}
+
+.header__logo {
+    margin-top: 2em;
+    min-width:  20%;
+    max-width: 50%;
+    align-self: center;
+
+}
+.header__title {
+    font-size: 2em;
+    margin-top: 2em;
+    min-width:  20%;
+    max-width: 70%;
+    align-self: center;
+    color: var(--color-white);
+    background-image: url('images/hitmarker.gif');
+    background-size: 200px 100px;
+}
+.header__title span{
+    color: black;
+	font-size: 34px;
+	-webkit-text-stroke: 1px var(--color-white);
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes marquee1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
