@@ -76,7 +76,7 @@ const sizes = {
 
 window.addEventListener('resize', () => {
     // Update sizes
-    sizes.width = receptuur.offsetWidth
+    sizes.width = receptuur.offsetWidth -16
     sizes.height =  sizes.height
 
     // Update camera
@@ -87,6 +87,7 @@ window.addEventListener('resize', () => {
     renderer.setSize(sizes.width, sizes.height)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 })
+
 
 /**
  * Camera

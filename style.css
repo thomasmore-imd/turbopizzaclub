@@ -125,7 +125,7 @@ body {
 }
 .header__images__baby{
     position: relative;
-    width: 80px;
+    width: 20vw;
     top: -80px;
     transform: rotate(20deg);
     z-index: 0;
@@ -133,24 +133,24 @@ body {
 }
 .header__images__welcome{
     position: relative;
-    width: 120px;
+    width: 30vw;
     top: -120px;
     z-index: 9999;
 }
 .header__images__globe{
     position: relative;
-    width: 80px;
+    width: 20vw;
     top: -500px;
 
 }
 .header__images__spaceship{
     position: relative;
-    width: 80px;
+    width: 20vw;
     top: -100px;
 }
 .header__images__alien{
     position: relative;
-    width: 40px;
+    width: 10vw;
     top: -100px;
     right: 20px;
 
@@ -231,6 +231,7 @@ body {
 .myCanvas{
     position: relative;
     top: -500px;
+    left: -1em;
 }
 
 @keyframes marquee1 {
