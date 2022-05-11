@@ -2,13 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
 }
 :root {
     --color-green: #00e311;
     --color-black : #000;
     --color-white : #fff;
+    --color-pink: #FA00FF;
+    --color-blue: #2400FF
+}
+
+body {
+    font-family: 'Inter', sans-serif;
 }
 
 .ticker {
@@ -75,14 +79,11 @@
 
 }
 
-
-
 .header {
     display: flex;
     flex-direction: column;
-
-    width: 100%;
-    height: 100vh;
+    position: relative;
+    width: 100%;   
     background-image: url('images/header.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,12 +114,76 @@
     color: var(--color-white);
     background-image: url('images/hitmarker.gif');
     background-size: 200px 100px;
+    margin-bottom: 4em;
 }
 .header__title span{
     color: black;
 	font-size: 34px;
 	-webkit-text-stroke: 1px var(--color-white);
 	-webkit-text-fill-color: transparent;
+}
+
+.receptuur {
+    background-color: var(--color-pink);
+    font-size: 0.9em;
+
+}
+
+.receptuur h2 {
+    color: white;
+    line-height: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+.receptuur__images {
+    text-align: center;
+    height: 80px;
+    position: relative;
+}
+
+.receptuur__images__buick{
+    position: relative;
+    width: 180px;
+    top: -80px;
+    z-index: 9999;
+}
+
+.receptuur__images__deanmartin {
+    position: absolute;
+    width: 20vw;
+    max-width: 200px;
+    top: -29px;
+    right: 0;
+    z-index: 9998;
+}
+
+.receptuur__cheeze {
+    background-image: url(../images/pizzacheeze.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em
+}
+
+.receptuur__links {
+    font-size: 2em;
+    font-family: 'Faster One', cursive;
+    padding: 1em 2em 4em 2em;
+}
+
+.receptuur__links ul a{
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+.receptuur__counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.receptuur__counter img {
+    max-width: 100px;
 }
 
 @keyframes marquee1 {
