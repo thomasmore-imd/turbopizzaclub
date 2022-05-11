@@ -170,6 +170,10 @@ body {
     padding: 1em 2em 4em 2em;
 }
 
+.receptuur__links ul {
+    list-style-type: none;
+}
+
 .receptuur__links ul a{
     color: var(--color-blue);
     text-decoration: none;
