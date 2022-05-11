@@ -48,6 +48,7 @@ body {
     transform-origin: left bottom;
     transform: rotate(90deg);
     top: -20px;
+    z-index: 10;
 
 }
 .ticker__text-1 {
@@ -87,6 +88,7 @@ body {
     background-image: url('images/header.png');
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .ticker__text-emph {
@@ -115,6 +117,43 @@ body {
     background-image: url('images/hitmarker.gif');
     background-size: 200px 100px;
     margin-bottom: 4em;
+}
+.header__images{
+    text-align: center;
+    height: 80px;
+    position: relative;
+}
+.header__images__baby{
+    position: relative;
+    width: 80px;
+    top: -80px;
+    transform: rotate(20deg);
+    z-index: 0;
+
+}
+.header__images__welcome{
+    position: relative;
+    width: 120px;
+    top: -120px;
+    z-index: 9999;
+}
+.header__images__globe{
+    position: relative;
+    width: 80px;
+    top: -500px;
+
+}
+.header__images__spaceship{
+    position: relative;
+    width: 80px;
+    top: -100px;
+}
+.header__images__alien{
+    position: relative;
+    width: 40px;
+    top: -100px;
+    right: 20px;
+
 }
 .header__title span{
     color: black;
