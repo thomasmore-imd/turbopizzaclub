@@ -228,6 +228,10 @@ body {
 .receptuur__counter img {
     max-width: 100px;
 }
+.myCanvas{
+    position: relative;
+    top: -500px;
+}
 
 @keyframes marquee1 {
     0% {
