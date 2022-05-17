@@ -246,6 +246,7 @@ body {
     font-style: italic;
     list-style: none;
     line-height: 1.5em;
+    padding-bottom: 6em;
 }
 
 .rulezzz__title img {
@@ -257,7 +258,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
-    height: 400px;
+    font-size: 1rem;
+    
 }
 .construction__header{
     max-width: 100%;
@@ -270,10 +272,39 @@ body {
     position: relative;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 20px;
     
 }
+.construction__content{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em 4em 2em;
+}
+.construction__content__title{
+    font-size: 2em;
+    font-family: 'Faster One', cursive;
+    color: var(--color-white);
+    font-size: 4em;
+}
+.construction__content__gifs{
 
+}
+.construction__content__gifs__fire-text{
+    position: relative;
+   width: 40vw;
+   transform: rotate(10deg);
+}
+.construction__content__gifs__drill{
+    position: relative;
+    width: 30vw;
+    max-width: 200px;
+    transform: rotate(-10deg);
+}
+
+.construction__content__gifs__neon{
+    position: relative;
+    top: -150px;
+    transform: rotate(5deg);
+}
 @keyframes marquee1 {
     0% {
         transform: translateX(100%);
