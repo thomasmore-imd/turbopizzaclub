@@ -252,8 +252,26 @@ body {
     max-width: 300px;
 }
 
-.myCanvas{
-
+.construction{
+    background-image: url("images/constructionBackground.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    height: 400px;
+}
+.construction__header{
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    height: 24px;
+    background-image: url('images/construction-divider.png');
+}
+.construction__logo{
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 20px;
+    
 }
 
 @keyframes marquee1 {
