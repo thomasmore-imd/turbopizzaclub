@@ -58,7 +58,7 @@ gltfLoader.load(
         })
         let model = gltf.scene
         //centering the model
-        new THREE.Box3()
+       let test =  new THREE.Box3()
             .setFromObject(model)
             .getCenter(model.position)
             .multiplyScalar(-1);

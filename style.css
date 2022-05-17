@@ -218,6 +218,13 @@ body {
 .receptuur__counter img {
     max-width: 100px;
 }
+.receptuur__footer{
+    max-width: 100%;
+    position: relative;
+    bottom: 0;
+    height: 24px;
+    background-image: url('images/lava-divider.png');
+}
 
 
 .rulezzz {
