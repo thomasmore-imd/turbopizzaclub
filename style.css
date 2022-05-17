@@ -221,13 +221,24 @@ body {
 
 
 .rulezzz {
-    background-image: url("../images/water.jpg");
-    background-size: cover;
+    background-image: url("../images/fish2.gif"), url("../images/fish1.gif"), url("../images/shell.gif"), url("../images/bubbles.gif"),  url("../images/water.jpg");
+    background-position: 30px 30%, 30px center,  20px bottom, 90% center, center center;
+    background-size: auto, auto, auto, auto, cover;
     background-repeat: no-repeat;
+    padding: 2em;
 }
 
 .rulezzz__title {
     text-align: center;
+}
+
+.rulezzz__text {
+    color: var(--color-pink);
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+    list-style: none;
+    line-height: 1.5em;
 }
 
 .rulezzz__title img {
