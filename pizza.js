@@ -57,12 +57,19 @@ gltfLoader.load(
             child.material = bakedMaterial
         })
         let model = gltf.scene
-
-        let box = new THREE.Box3().setFromObject( model );
-        box.center( model.position ); // this re-sets the mesh position
-        model.position.multiplyScalar( - 1 );
+        //centering the model
+        new THREE.Box3()
+            .setFromObject(model)
+            .getCenter(model.position)
+            .multiplyScalar(-1);
 
         scene.add(model)
+
+       /* const animatePizza = () => {
+            requestAnimationFrame(animatePizza)
+            model.rotation.y += 0.01
+        }
+        animatePizza()*/
     })
 
 
@@ -76,8 +83,8 @@ const sizes = {
 
 window.addEventListener('resize', () => {
     // Update sizes
-    sizes.width = receptuur.offsetWidth -16
-    sizes.height =  sizes.height
+    sizes.width = receptuur.offsetWidth - 16
+    sizes.height = sizes.height
 
     // Update camera
     camera.aspect = sizes.width / sizes.height
@@ -109,7 +116,7 @@ controls.enableZoom = false
  */
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
-    antialias: true, 
+    antialias: true,
     alpha: true
 })
 renderer.setSize(sizes.width, sizes.height)

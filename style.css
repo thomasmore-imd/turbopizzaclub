@@ -235,9 +235,7 @@ body {
 }
 
 .myCanvas{
-    position: relative;
-    top: -500px;
-    left: -1em;
+
 }
 
 @keyframes marquee1 {
