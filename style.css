@@ -120,14 +120,15 @@ body {
     margin-bottom: 2em;
 }
 .header__images{
-    text-align: right;
+    text-align: center;
     position: relative;
-    border: 5px solid red;
 }
 .header__images__baby{
     transform: rotate(10deg);
     z-index: 0;
-    width: 100px
+    width: 100px;
+    position: relative;
+    top: -1em;
 }
 .header__images__welcome{
     width: 160px;
@@ -138,11 +139,15 @@ body {
 
 }
 .header__images__spaceship{
-    width: 20vw;
+    width: 100px;
+    position: relative;
+    right: -2em;
+    top: -2em;
 }
 
 .header__images__alien{
-
+    position: relative;
+    right: 2em;
 }
 
 .header__title span{
