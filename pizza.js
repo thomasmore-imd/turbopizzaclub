@@ -58,18 +58,14 @@ gltfLoader.load(
         })
         let model = gltf.scene
         //centering the model
-       let test =  new THREE.Box3()
-            .setFromObject(model)
-            .getCenter(model.position)
-            .multiplyScalar(-1);
-
+      
         scene.add(model)
 
-       /* const animatePizza = () => {
+        const animatePizza = () => {
             requestAnimationFrame(animatePizza)
             model.rotation.y += 0.01
         }
-        animatePizza()*/
+        animatePizza()
     })
 
 
@@ -93,6 +89,9 @@ window.addEventListener('resize', () => {
     // Update renderer
     renderer.setSize(sizes.width, sizes.height)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    
+
+   setCamera()
 })
 
 
@@ -101,9 +100,25 @@ window.addEventListener('resize', () => {
  */
 // Base camera
 const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.1, 100)
-camera.position.x = 12
-camera.position.y = 8
-camera.position.z = 22
+
+const setCamera= ()=>{
+    if(document.body.clientWidth < 800){
+        camera.position.x = 12
+        camera.position.y = 8
+        camera.position.z = 40
+
+       
+        
+    }else{
+        camera.position.x = 12
+        camera.position.y = 8
+        camera.position.z = 22
+    }
+    
+
+}
+setCamera()
+
 scene.add(camera)
 
 // Controls

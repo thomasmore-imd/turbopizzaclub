@@ -310,6 +310,12 @@ body {
     top: -150px;
     transform: rotate(5deg);
 }
+.myCanvas{
+    position: relative;
+    left: 0;
+  padding-right: 1em;
+}
+
 @keyframes marquee1 {
     0% {
         transform: translateX(100%);
