@@ -224,6 +224,10 @@ body {
     width: 200px;
 }
 
+.hitcounter {
+    margin-top: 1em;
+}
+
 .receptuur__counter img {
     max-width: 100px;
 }
@@ -343,5 +347,11 @@ body {
 @media(max-width: 600px) {
     .hidden-mobile {
         display: none;
+    }
+}
+
+@media(min-width: 600px) {
+    .receptuur__links {
+        font-size: 2em;
     }
 }
