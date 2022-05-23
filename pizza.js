@@ -61,11 +61,18 @@ gltfLoader.load(
       
         scene.add(model)
 
-        const animatePizza = () => {
+       const animatePizza = () => {
             requestAnimationFrame(animatePizza)
-            model.rotation.y += 0.01
+            model.rotation.x += 0.01 * Math.PI / 2
+        
         }
         animatePizza()
+
+        window.addEventListener("scroll", () => {
+           model.rotation.y = 
+              window.scrollY / window.innerHeight *  Math.PI * 2
+             
+        })
     })
 
 
@@ -122,7 +129,7 @@ setCamera()
 scene.add(camera)
 
 // Controls
-const controls = new THREE.OrbitControls(camera, canvas)
+/*const controls = new THREE.OrbitControls(camera, canvas)
 controls.enableDamping = true
 controls.enableZoom = false
 
@@ -153,9 +160,12 @@ const clock = new THREE.Clock()
 const tick = () => {
     const elapsedTime = clock.getElapsedTime()
 
-    // Update controls
-    controls.update()
 
+
+    // Update controls
+   // controls.update()
+
+   camera.lookAt(scene.position)
     // Go through all points
 
     // Render
