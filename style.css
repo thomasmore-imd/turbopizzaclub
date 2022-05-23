@@ -160,7 +160,6 @@ body {
 .receptuur {
     background-color: var(--color-pink);
     font-size: 0.9em;
-
 }
 
 .receptuur h2 {
@@ -199,9 +198,9 @@ body {
 }
 
 .receptuur__links {
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'Faster One', cursive;
-    padding: 1em 2em 4em 2em;
+    padding: 1em 1em 4em 1em;
 }
 
 .receptuur__links ul {
@@ -212,6 +211,11 @@ body {
     color: var(--color-blue);
     text-decoration: none;
 }
+
+.receptuur__links ul li  {
+    margin-bottom: 0.3em;
+}
+
 
 .receptuur__counter {
     display: flex;
